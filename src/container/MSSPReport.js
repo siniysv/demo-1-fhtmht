@@ -7,23 +7,25 @@ import PieLinearWidget from "./PieLinearWidget";
 import StackedBarsWidget from "./StackedBarsWidget";
 import GroupedBarsWidget from "./GroupedBarsWidget";
 import ShortDescriptionWidget from "./ShortDescriptionWidget";
+import LongDescriptionWidget from "./LongDescriptionWidget";
 import "../style/style.css";
 
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
 
+const originalLayouts = getFromLS("layouts") || myLayouts;
+
+
 class MSSPReport extends Component {
   static defaultProps = {
     className: "layout",
-    rowHeight: 30,
+    rowHeight: 150,
     cols: { lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 },
   };
 
   constructor(props) {
     super(props);
     this.state = {
-      myLayouts: this.props.layouts || myLayouts,
-      currentBreakPoint: "",
-      mounted: false,
+      layouts: JSON.parse(JSON.stringify(originalLayouts)),
       data: this.props.data,
       month: this.props.month,
       headers: this.props.headers,
@@ -40,33 +42,40 @@ class MSSPReport extends Component {
         colors: nextProps.colors
       })
     }
+    if (nextProps.data != this.state.data) {
+      this.setState({
+        month: nextProps.month,
+        data: nextProps.data,
+        headers: nextProps.headers,
+        colors: nextProps.colors
+      })
+    }
   }
 
-  componentDidMount() {
-    this.setState({ mounted: true });
+  resetLayouts() {
+    this.setState({ layouts: myLayouts });
   }
 
-  onBreakpointChange = (breakpoint, cols) => this.setState({currentBreakPoint: breakpoint});
-  // onLayoutChange = (layout) => console.log(layout);
-
-
+  onLayoutChange = (layout, layouts) => {
+    saveToLS(layouts);
+    this.setState({ layouts });
+  }
 
   render() {
     const data = this.state.data;
     const headers = this.state.headers;
     const colors = this.state.colors;
-
-    // console.log(data);
     if (!data) {
       return null
     };
 
-    // console.log(data);
-
     return(
       <ResponsiveReactGridLayout
-        layouts={this.state.myLayouts}
-        onBreakpointChange={this.onBreakpointChange}
+        {...this.props}
+        layouts={this.state.layouts}
+        onLayoutChange={(layout, layouts) =>
+          this.onLayoutChange(layout, layouts)
+        }
         draggableHandle=".widget h1"
         draggableCancel=".widget-content"
       >
@@ -128,9 +137,53 @@ class MSSPReport extends Component {
             icon="bookmark"
             />
         </div>
+        <div key="goodDescription" className="tile">
+          <LongDescriptionWidget
+            name="goodDescription"
+            content={{header: headers["goodDescription"], data: data["goodDescription"]}}
+            colors={colors["goodDescription"]}
+            icon="flag"
+            />
+        </div>
+        <div key="badDescription" className="tile">
+          <LongDescriptionWidget
+            name="badDescription"
+            content={{header: headers["badDescription"], data: data["badDescription"]}}
+            colors={colors["badDescription"]}
+            icon="flag"
+            />
+        </div>
       </ResponsiveReactGridLayout>
     )
   }
 }
 
 export default MSSPReport;
+
+function getFromLS() {
+  console.log("Getting layouts from LS");
+  let ls = {};
+  if (global.localStorage) {
+    try {
+      ls = JSON.parse(global.localStorage.getItem("mssp_layouts"));
+      console.log("Got layouts from LS", ls);
+      return ls.value;
+  } catch (e) {
+      // skip
+    }
+  }
+  console.log("No layouts found in LS");
+  return null
+}
+
+function saveToLS(value) {
+  console.log("Saving layouts to LS");
+  if (global.localStorage) {
+    global.localStorage.setItem(
+      "mssp_layouts",
+      JSON.stringify({
+        value
+      })
+    );
+  }
+}

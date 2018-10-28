@@ -1,5 +1,7 @@
 @import "~react-grid-layout/css/styles.css";
 @import "~react-resizable/css/styles.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   font-family: "Open Sans";
@@ -81,4 +83,6 @@ td {
 td.min {
   width: 1%;
   white-space: nowrap;
+  text-align: center;
+  vertical-align: top;
 }

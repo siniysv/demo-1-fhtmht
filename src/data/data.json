@@ -5,7 +5,9 @@
     "unprotectedPie": ["#bc381e", "#ffb596"],
     "vsBar": ["#bc381e", "#466289"],
     "legacyBar": ["#ffb596", "#466289"],
-    "unmanagedBar": ["#bc381e", "#ffc784", "#466289"]
+    "unmanagedBar": ["#bc381e", "#466289"],
+    "goodDescription": ["#466289", "#a7b8d1"],
+    "badDescription": ["#bc381e", "#ffb596"]
   },
   "monthlyData": [
     {
@@ -18,7 +20,9 @@
         "protectedPie": [{"name": "Best", "value": 51}, {"name": "Better", "value": 12}, {"name": "Good", "value": 3}],
         "unprotectedPie": [{"name": "Worst", "value": 1}, {"name": "Worse", "value": 9}, {"name": "Bad", "value": 33}],
         "protectedPieDesc": ["Systems with full protection", "Systems partially protected", "Systems almost unrpotected"],
-        "unprotectedPieDesc": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"]
+        "unprotectedPieDesc": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"],
+        "goodDescription": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"],
+        "badDescription": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"]
       },
       "headers": {
         "TotalPie": "Totals for the month",
@@ -29,7 +33,9 @@
         "protectedPie": "Protected",
         "unprotectedPie": "Unprotected",
         "protectedPieDesc": "Protected",
-        "unprotectedPieDesc": "Unprotected"
+        "unprotectedPieDesc": "Unprotected",
+        "goodDescription": "Good things",
+        "badDescription": "Bad things"
       }
     },
     {
@@ -42,7 +48,9 @@
         "protectedPie": [{"name": "Best", "value": 56}, {"name": "Better", "value": 12}, {"name": "Good", "value": 3}],
         "unprotectedPie": [{"name": "Worst", "value": 1}, {"name": "Worse", "value": 12}, {"name": "Bad", "value": 33}],
         "protectedPieDesc": ["Systems with full protection", "Systems partially protected", "Systems almost unrpotected"],
-        "unprotectedPieDesc": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"]
+        "unprotectedPieDesc": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"],
+        "goodDescription": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"],
+        "badDescription": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"]
       },
       "headers": {
         "TotalPie": "Totals for the month",
@@ -53,7 +61,9 @@
         "protectedPie": "Protected",
         "unprotectedPie": "Unprotected",
         "protectedPieDesc": "Protected",
-        "unprotectedPieDesc": "Unprotected"
+        "unprotectedPieDesc": "Unprotected",
+        "goodDescription": "Good things",
+        "badDescription": "Bad things"
       }
     },
     {
@@ -66,7 +76,17 @@
         "protectedPie": [{"name": "Best", "value": 56}, {"name": "Better", "value": 12}, {"name": "Good", "value": 3}],
         "unprotectedPie": [{"name": "Worst", "value": 1}, {"name": "Worse", "value": 12}, {"name": "Bad", "value": 33}],
         "protectedPieDesc": ["Systems with full protection", "Systems partially protected", "Systems almost unrpotected"],
-        "unprotectedPieDesc": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"]
+        "unprotectedPieDesc": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"],
+        "goodDescription": [
+          "# Very good\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "# Somehow good\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "# A bit good\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        ],
+        "badDescription": [
+          "# September Very bad\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "# September Somehow bad\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "# September Awfully bad\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        ]
       },
       "headers": {
         "TotalPie": "Totals for the month",
@@ -77,7 +97,9 @@
         "protectedPie": "Protected",
         "unprotectedPie": "Unprotected",
         "protectedPieDesc": "Protected",
-        "unprotectedPieDesc": "Unprotected"
+        "unprotectedPieDesc": "Unprotected",
+        "goodDescription": "Good things",
+        "badDescription": "Bad things"
       }
     }
   ]
