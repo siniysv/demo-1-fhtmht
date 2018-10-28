@@ -3,6 +3,11 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@page {
+    size: auto;
+}
+
 html {
   font-family: "Open Sans";
 }

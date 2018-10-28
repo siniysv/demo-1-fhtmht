@@ -145,9 +145,11 @@ class ToolBarBS extends React.Component {
                 Data
               </DropdownToggle>
               <DropdownMenu>
-                <ReactFileReader handleFiles={this.handleFiles} fileTypes={'.json'}>
-                  <DropdownItem>Upload</DropdownItem>
-                </ReactFileReader>
+                <DropdownItem>
+                  <ReactFileReader handleFiles={this.handleFiles} fileTypes={'.json'}>
+                    <span>Upload</span>
+                  </ReactFileReader>
+                </DropdownItem>
                 <DropdownItem onClick={this.showModalEditor}>Edit</DropdownItem>
               </DropdownMenu>
             </Dropdown>

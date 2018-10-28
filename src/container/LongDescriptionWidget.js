@@ -27,7 +27,7 @@ class LongDescriptionWidget extends Component {
     const header = this.state.content.header ? this.state.content.header : "<Empty>";
     return(
       <div className="widget">
-        <div title={title}>
+        <div className="widget-header" title={title}>
           <h1>{header}</h1>
         </div>
         <div className="widget-text">
