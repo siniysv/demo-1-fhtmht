@@ -1,0 +1,84 @@
+{
+  "colorScheme": {
+    "TotalPie": ["#466289", "#c8d6e8", "#ffc784"],
+    "protectedPie": ["#466289", "#a7b8d1"],
+    "unprotectedPie": ["#bc381e", "#ffb596"],
+    "vsBar": ["#bc381e", "#466289"],
+    "legacyBar": ["#ffb596", "#466289"],
+    "unmanagedBar": ["#bc381e", "#ffc784", "#466289"]
+  },
+  "monthlyData": [
+    {
+      "month": "July",
+      "data":{
+        "TotalPie": [{"name": "Active", "value": 56}, {"name": "Inactive", "value": 12}, {"name": "Legacy", "value": 3}],
+        "vsBar": [{"name": "July", "Unprotected": 10, "Protected": 46}],
+        "legacyBar": [{"Windows XP": 2, "Windows 2003": 1}],
+        "unmanagedBar": [{">7 days": 6, ">30 days": 6, "Never contacted": 3}],
+        "protectedPie": [{"name": "Best", "value": 51}, {"name": "Better", "value": 12}, {"name": "Good", "value": 3}],
+        "unprotectedPie": [{"name": "Worst", "value": 1}, {"name": "Worse", "value": 9}, {"name": "Bad", "value": 33}],
+        "protectedPieDesc": ["Systems with full protection", "Systems partially protected", "Systems almost unrpotected"],
+        "unprotectedPieDesc": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"]
+      },
+      "headers": {
+        "TotalPie": "Totals for the month",
+        "vsBar": "Protected vs Unprotected",
+        "legacyBar": "Legacy systems",
+        "unmanagedBar": "Unmanaged systems",
+        "legacyBar": "Legacy systems",
+        "protectedPie": "Protected",
+        "unprotectedPie": "Unprotected",
+        "protectedPieDesc": "Protected",
+        "unprotectedPieDesc": "Unprotected"
+      }
+    },
+    {
+      "month": "August",
+      "data":{
+        "TotalPie": [{"name": "Active", "value": 53}, {"name": "Inactive", "value": 9}, {"name": "Legacy", "value": 3}],
+        "vsBar": [{"name": "August", "Unprotected": 11, "Protected": 47}],
+        "legacyBar": [{"Windows XP": 2, "Windows 2003": 1}],
+        "unmanagedBar": [{">7 days": 3, ">30 days": 5, "Never contacted": 1}],
+        "protectedPie": [{"name": "Best", "value": 56}, {"name": "Better", "value": 12}, {"name": "Good", "value": 3}],
+        "unprotectedPie": [{"name": "Worst", "value": 1}, {"name": "Worse", "value": 12}, {"name": "Bad", "value": 33}],
+        "protectedPieDesc": ["Systems with full protection", "Systems partially protected", "Systems almost unrpotected"],
+        "unprotectedPieDesc": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"]
+      },
+      "headers": {
+        "TotalPie": "Totals for the month",
+        "vsBar": "Protected vs Unprotected",
+        "legacyBar": "Legacy systems",
+        "unmanagedBar": "Unmanaged systems",
+        "legacyBar": "Legacy systems",
+        "protectedPie": "Protected",
+        "unprotectedPie": "Unprotected",
+        "protectedPieDesc": "Protected",
+        "unprotectedPieDesc": "Unprotected"
+      }
+    },
+    {
+      "month": "September",
+      "data":{
+        "TotalPie": [{"name": "Active", "value": 55}, {"name": "Inactive", "value": 9}, {"name": "Legacy", "value": 3}],
+        "vsBar": [{"name": "September", "Unprotected": 10, "Protected": 46}],
+        "legacyBar": [{"Windows XP": 2, "Windows 2003": 1}],
+        "unmanagedBar": [{">7 days": 3, ">30 days": 5, "Never contacted": 1}],
+        "protectedPie": [{"name": "Best", "value": 56}, {"name": "Better", "value": 12}, {"name": "Good", "value": 3}],
+        "unprotectedPie": [{"name": "Worst", "value": 1}, {"name": "Worse", "value": 12}, {"name": "Bad", "value": 33}],
+        "protectedPieDesc": ["Systems with full protection", "Systems partially protected", "Systems almost unrpotected"],
+        "unprotectedPieDesc": ["Systems without protection", "Systems with old s/w", "Systems w/o signature updates"]
+      },
+      "headers": {
+        "TotalPie": "Totals for the month",
+        "vsBar": "Protected vs Unprotected",
+        "legacyBar": "Legacy systems",
+        "unmanagedBar": "Unmanaged systems",
+        "legacyBar": "Legacy systems",
+        "protectedPie": "Protected",
+        "unprotectedPie": "Unprotected",
+        "protectedPieDesc": "Protected",
+        "unprotectedPieDesc": "Unprotected"
+      }
+    }
+  ]
+}

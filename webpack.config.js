@@ -1,8 +1,20 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   module: {
     rules: [
+      {
+        test: /\.(css)$/,
+        use:[
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          {
+            loader: "css-loader"
+          }
+        ]
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -28,6 +40,7 @@ module.exports = {
       favicon: "./public/favicon.ico",
       inlineSource: '.(js|css)$'
     }),
+    new MiniCssExtractPlugin(),
     new HtmlWebpackInlineSourcePlugin()
   ]
 };

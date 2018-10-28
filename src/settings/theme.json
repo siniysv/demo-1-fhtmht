@@ -1,0 +1,13 @@
+{
+  "theme": "isa",
+  "fullName": "ISA website colors",
+  "colors": {
+    "toolbar": {
+      "background": "#5d87bd",
+      "linkHover": "#004078",
+      "linkSelected": "#004078",
+      "menuItem": "#dcdfe2",
+      "menuItemHover": "#bcbcbc"
+    }
+  }
+}

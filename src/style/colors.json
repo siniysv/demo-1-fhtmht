@@ -1,0 +1,8 @@
+{
+  "TotalPie": ["#466289", "#c8d6e8", "#ffc784"],
+  "protectedPie": ["#466289", "#a7b8d1"],
+  "unprotectedPie": ["#bc381e", "#ffb596"],
+  "vsBar": ["#bc381e", "#466289"],
+  "legacyBar": ["#ffb596", "#466289"],
+  "unmanagedBar": ["#bc381e", "#ffc784", "#466289"]
+}
